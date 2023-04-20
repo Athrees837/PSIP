@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/ЛР1.css">
+	<title>Резюме</title>
+	<style>
+		@import url(../css/ЛР1_2.css);
+		img {
+    border: 3px solid #2575CB;
+    float: left;
+    margin-right: 10px;
+   }
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<img src="../jpg/IMG_20190907_101809.jpg" height="160" width="130" alt="">
+		<div style="background-color: #2D2D2D; width: 100px; white-space: nowrap; margin-left: 150px;"><h1>МОЁ РЕЗЮМЕ</h1></div>
+	<div id="Line" style="width:300px; margin-left: 10px; padding-left: 10px;"><p><b style="color: white">Здраствуйте!</b></p><hr></div>
+	<div style="margin-left: 150px; color:#605C5A">
+		<i>Меня зовут Никита Савицкий, я студент в политехническом колледже, обучаюсь на 3 курсе на квалификацию техник-программист. Данный сайт разработан для знакомства с основными тегами html. <br><a href="https://vk.com/id430508637">Мой ВК</a></i>
+	</div>
+	<br>
+	<div class="box">
+		<div id="Hobbys" style="width: 300px;">
+			<p><b>Далее я расскажу про мои увлечения:</b></p>
+			<ul>
+				<li><span>Спорт</span></li>
+				<li><span>Аниме</span></li>
+				<li><span>Видеоигры</span></li>
+				<li><span>Программирование</span></li>
+			</ul>
+		</div>
+		<div style="width: 300px;">
+			<p><b style="color: #2575CB;">Мои любимые исполнители:</b></p>
+				<ol style="color: #2575CB;">
+					<li><span>Эпидемия</span></li>
+					<li><span>Sabaton</span></li>
+					<li><span>Powerwolf</span></li>
+				</ol>
+		</div>
+		<div style="width: 300px;">
+			<p><b style="color: #2575CB;">Любимые аниме по жанрам:</b></p>
+				<dl style="color: #2575CB;">
+					<dt>Исекай:</dt>
+						<dd><span>Восхождение героя щита</span></dd>
+						<dd><span>Re:Zero</span></dd>
+						<dd><span>Konosuba</span></dd>
+					<dt>Сёнэн:</dt>
+						<dd><span>Bleach</span></dd>
+						<dd><span>Hunter X Hunter</span></dd>
+						<dd><span>Naruto</span></dd>
+					<dt>Экшен:</dt>
+						<dd><span>КРД</span></dd>
+						<dd><span>Атака титанов</span></dd>
+						<dd><span>JoJo</span></dd>
+				</dl>
+		</div>
+	</div>
+	<div class="box">
+		<p><b style="color: #2575CB;">Мои любимые треки:</b></p>
+		<div style="width: 350px; height: 150px;">
+			<p style="color: #2575CB;">Powerwolf</p>
+			<audio controls src="../mp3/Killers_with_the_cross.mp3"><a href="../mp3/Killers_with_the_cross.mp3">Download audio</a></audio>
+			<b>Killers with the cross</b>
+		</div>
+		<div style="width: 350px; height: 150px;">
+			<p style="color: #2575CB;">Sabaton</p>
+			<audio controls src="../mp3/night-witches.mp3"><a href="../mp3/night-witches.mp3">Download audio</a></audio> <br>
+			<b>Night witches</b>
+		</div>
+	</div>
+	<div class="box">
+		<br><b style="color: #2575CB;">Любимый опенинг:</b><br>
+		<div id="videobox" style="height: 300px; width: 490px; margin-left: 130px;">
+			<video src="../mp4/Akame_ga_Kill!.mp4" width="480" height="270" poster="../jpg/91QjUH1o9jL._AC_UF894,1000_QL80_.jpg" controls>
+			</video>
+			<b>Akame ga kill</b>
+		</div>
+	</div>
+	<div>
+		<br><b style="color: #2575CB;">Мои оценки аниме:</b><br>
+		<table>
+			<tr class="title">
+   			 	<td colspan="2">Сёнэн</td>
+    			<td>Исекай</td>
+    			<td>Экшен</td>
+    			<td>Психология</td>
+ 			</tr>
+  			<tr>
+    			<td class="title">10</td>
+    			<td>Bleach</td>
+    			<td>Восхождение героя щита</td>
+    			<td>КРД</td>
+    			<td>Обещанный неверленд</td>
+  			</tr>
+  			<tr>
+    			<td class="title">9</td>
+    			<td>Akame ga kill</td>
+    			<td>Konosuba</td>
+    			<td>Атака титанов</td>
+    			<td>ERASED</td>
+  			</tr>
+  			<tr>
+    			<td class="title">8</td>
+    			<td>Seven Deadly Sins</td>
+    			<td>Overlord</td>
+    			<td>Vinland Saga</td>
+    			<td>Classroom of Elite</td>
+  			</tr>
+		</table>
+	</div>
+	<div>
+		<form action="#">
+  <p><i style="color: #2575CB;">Пожалуйста, заполните форму. Обязательные поля помечены </i><em>*</em></p>
+  <fieldset>
+    <legend style="color: #2575CB;">Контактная информация</legend>
+      <label class="text_input" for="name">Имя <em>*</em></label>
+      <input class="inpt" placeholder="Имя" id="name"><br>
+      <label for="telephone">Телефон</label>
+      <input class="inpt" placeholder="Телефон" id="telephone"><br>
+      <label for="email">Email <em>*</em></label>
+      <input class="inpt" placeholder="Email" id="email"><br>
+  </fieldset>
+  <fieldset>
+    <legend style="color: #2575CB;">Персональная информация</legend>
+      <label for="age">Возраст<em>*</em></label>
+      <input class="inpt" placeholder="Возраст" id="age"><br>
+      <label for="gender">Пол</label>
+      <select id="gender" style="background-color: #23241F; color: #757575; border: none;">
+        <option value="female">Женщина</option>
+        <option value="male">Мужчина</option>
+      </select><br>
+      <label for="comments">Перечислите личные качества</label>
+      <textarea id="comments" style="background-color: #23241F; border: none;"></textarea>
+  </fieldset>
+  <fieldset>
+    <legend style="color: #2575CB;">Выберите ваших любимых животных</legend>
+    <label class="lbl" for="zebra"><input id="zebra" type="checkbox"> Зебра</label>
+    <label class="lbl" for="cat"><input id="cat" type="checkbox"> Кошак</label>
+    <label class="lbl" for="anaconda"><input id="anaconda" type="checkbox"> Анаконда</label>
+    <label class="lbl" for="human"><input id="human" type="checkbox"> Человек</label>
+    <label class="lbl" for="elephant"><input id="elephant" type="checkbox"> Слон</label>
+    <label class="lbl" for="wildebeest"><input id="wildebeest" type="checkbox"> Антилопа</label>
+    <label class="lbl" for="pigeon"><input id="pigeon" type="checkbox"> Голубь</label>
+    <label class="lbl" for="crab"><input id="crab" type="checkbox"> Краб</label>
+  </fieldset>
+  <p><input type="submit" value="Отправить информацию"></p>
+	</form>
+	</div>
+	<p><a href="Сайт.html#top">В начало</a></p>	
+	</div>
+</body>
+</html>

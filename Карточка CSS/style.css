@@ -1,0 +1,6 @@
+body { /* Атрибут body */
+	background-color: #8B0101; /* Задний фон страницы красный */
+	font-family: Arial;/* Шрифт текста Arial */
+	font-size: 10pt;/* Размер текста 10pt */
+	color: blue;/* Цвет текста синий */
+}

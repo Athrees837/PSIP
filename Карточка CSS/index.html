@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style1.css">
+	<style>
+		@import url(style.css);
+		.Hobbys {
+			background-color: green;
+			width: 200pt;
+			height: 250pt;
+			text-align: center;
+		}
+	</style>
+</head>
+<body> 
+	<!-- Для текста в body определён глобальный цвет текста синий -->
+	<p>Савицкий Никита Андреевич</p>
+	<h5 style="text-decoration: underline; color: black; text-align: right">ПЗТ-34</h5> <!-- Хоть глобальный цвет текста синий, но мы установили цвет черный, и css применяет правило расположенное ниже в таблице стилей -->
+	<div class="Hobbys">
+		Мои увлечения: спорт, аниме, моделирование, программирование.
+	</div>
+	<a href="КарточкаCSS.rar" download>Скачать архив</a>
+</body>
+</html>
