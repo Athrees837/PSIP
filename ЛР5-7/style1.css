@@ -1,0 +1,61 @@
+body {
+	height: 100%;
+	width: 100%;
+}
+.header {
+	position: absolute;
+	left: 0;
+  	top: 0;
+  	height: 50px;
+  	width: 1536px;
+  	background-color: #FBC20F;
+}
+.nav {
+	overflow: hidden;
+	background-color: #E4382A;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 1536px;
+	height: 45px;
+}
+.article {
+	position: absolute;
+	background-color: #4A8AF4;
+	top: 95px;
+	left: 0;
+	width: 1236px;
+	height: 90px;
+}
+.form {
+	position: absolute;
+	background-color: #F07427;
+	top: 185px;
+	left: 0;
+	width: 1236px;
+	height: 519px;
+}
+.net {
+	position: absolute;
+	background-color: #9F00FF;
+	top: 345px;
+	right: 0;
+	width: 300px;
+	height: 359px;
+}
+.image {
+	position: absolute;
+	top: 95px;
+	left: 1236px;
+	width: 300px;
+	height: 300px;
+}
+
+.footer {
+	position: absolute;
+  	left: 0;
+  	bottom: 0;
+  	width: 1536px;
+  	height: 50px;
+  	background-color: #1C9440;
+}

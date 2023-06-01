@@ -1,0 +1,60 @@
+html,body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+.header {
+	position: relative;
+	left: 0;
+  	top: 0;
+  	height: 6.79%;
+  	width: 100%;
+  	background-color: #FBC20F;
+}
+.nav {
+	overflow: hidden;
+	background-color: #E4382A;
+	position: relative;
+	width: 100%;
+	height: 5.8%;
+}
+.article {
+	position: relative;
+	background-color: #4A8AF4;
+	width: 80.47%;
+	height: 12.3%;
+}
+.form {
+	position: relative;
+	background-color: #F07427;
+	bottom: 90%;
+	width: 80.47%;
+	height: 70.439%;
+}
+.net {
+	position: relative;
+	background-color: #9F00FF;
+	left: 80.48%;
+	bottom: 19.5%;
+	width: 19.531%;
+	height: 48.724%;
+}
+.image {
+	position: relative;
+	left: 80.48%;
+	bottom: 12.2%;
+	width: 19.531%;
+	height: 40.717%;
+}
+
+.footer {
+	position: relative;
+	bottom: 91.5%;
+  	width: 100%;
+  	height: 6.786%;
+  	background-color: #1C9440;
+}
+img {
+	height: 81.8%;
+	width: 100%;
+}

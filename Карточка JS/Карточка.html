@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="script.js"></script>
+	<script>
+	    function button() {
+	    	var today = new Date();	
+
+	    	window.alert(today.getMonth() +"-" +  (today.getYear() + 1900));
+	    }
+	</script>
+</head>
+<body>
+	<button type="submit" id="Date" onclick="button()">Показать год</button>
+	<script>
+		var i;
+		for(i=0; i<10; i++){
+			document.write("<br>ПЗТ-34 3 курс ");
+		}
+		let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+		var sum = 0;
+		for (var i = 0; i < arr.length; i++){
+			sum += arr[i];
+		}
+		var result = sum/arr.length;
+		document.write("<br>Среднее арифметическое массива: " + result);
+		var div = document.createElement('div');
+		div.className = "alert alert-success";
+		div.innerHTML = "Площадь круга с радиусом 3: " + Area();
+		document.body.appendChild(div);
+		const s1 = "Савицкий ";
+		const s2 = "ул. Тавлая д.21";
+		document.write("Длина строки s1: " + s1.length);
+		document.write("<br>"+s1+s2);
+		document.write("<br>" + s2.toUpperCase());
+	</script>
+</body>
+</html>
