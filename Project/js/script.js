@@ -8,7 +8,7 @@ function init() {
 ymaps.ready(init);
 
 function showModal() {
-alert("По всем вопросам обращаться:https://m.vk.com/tufudj");
+alert("Разработчик сайта: https://github.com/Athrees837");
 }
 
 setTimeout(showModal, 3000);
