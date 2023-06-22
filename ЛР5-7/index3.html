@@ -1,58 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style3.css">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
-		<div class="header"></div>
-		<div class="nav"></div>
-		<div class="article"></div>
-		<div class="image"><img id="chrome" src="chrome.png" alt=""></div>
-		<div class="form">
-			<p>ОБРАЗОВАНИЕ И РАБОТА</p>
-			<hr>
-			<label class="text_input" for="education"><em>*</em> Информация об образовании</label><br>
-      		<select class="sel" id="education">
-        		<option value="general">Учащийся общеобразовательного учреждения</option>
-      		</select>
-      		<label class="text_input" for="employment"><em>*</em> Информация о трудоустройстве</label><br>
-      		<select class="sel" id="employment">
-        		<option value="general">учащийся</option>
-      		</select>
-      		<p>МЕСТО УЧЕБЫ</p>
-      		<hr>
-      		<div style="background-color: #EFEFEF; color: #A9A9A9; height: 80%;"><br>
-      			<div style="background-color: #FFFFFF; height: 80%; width: 98%; margin-left: 1%; margin-right: 1%; border-style: dashed; border-color: #BBBBBB; padding: 0;">
-      				<label class="text_input" for="name"><em>*</em> Наименование учебного заведения</label><br>
-      				<input class="inpt" id="name"><br>
-      				<label class="text_input" for="Region"><em>*</em> Регион</label><br>
-      				<select style="width: 98.5%; height: 12%;" class="sel" id="Region">
-        				<option value="general">Укажите регион</option>
-      				</select>
-      				<label class="text_input" for="Locality"><em>*</em> Населенный пункт</label><br>
-      				<input class="inpt" id="Locality"><br>
-      				<label class="text_input" for="Region"><em>*</em> Дата поступления</label><br>
-      				<select id="month" class="sel" id="Region">
-        				<option value="general">Укажите месяц</option>
-      				</select>
-      				<select id="year" class="sel" id="Region">
-        				<option value="general">Укажите год</option>
-      				</select>
-      			</div>
-      			<div style="padding-left: 40%; padding-top: 1%; height: 8%; width: 14%;"><input id="button" type="submit" value="ДОБАВИТЬ ЕЩЁ"></div>
-      		</div>
-		</div>
-		<div class="net">
-			<div style="height: 100%; width: 100%; padding-top: 5%;">
-				<img src="heart.png" style="height: 15%;">
-				<img src="add.png" style="height: 12%">
-				<img src="led.jpg" style="height: 30%; width: 60%;">
-				<p>КРЕДИТ<br> ДО 36 МЕС</p>
-			</div>
-		</div>
-		<div class="footer"></div>
+<header class="header">
+    <div class="header__container container">
+        <div class="header__logo">
+            <img
+                src="logo.png"
+                alt="logo">
+        </div>
+        <nav class="header__menu menu">
+            <ul class="header__list menu__list">
+                <li class="menu__item"><a href="#!" class="menu__link">Главная</a></li>
+                <li class="menu__item"><a href="#!" class="menu__link">Продукция</a></li>
+                <li class="menu__item"><a href="#!" class="menu__link">О нас</a></li>
+                <li class="menu__item"><a href="#!" class="menu__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="navigation">
+    <div class="navigation__container container">
+        <nav class="navigation__menu menu">
+            <ul class="header__list menu__list">
+                <li class="menu__item"><a href="#!" class="menu__link">Главная</a></li>
+                <li class="menu__item"><a href="#!" class="menu__link">Продукция</a></li>
+                <li class="menu__item"><a href="#!" class="menu__link">О нас</a></li>
+                <li class="menu__item"><a href="#!" class="menu__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+<main class="main">
+    <section class="content">
+        <div class="content__container container">
+            <article>Равно как нет никого, кто возлюбил бы, предпочел и возжаждал бы само страдание только за то, что это страдание, а не потому, что иной раз возникают такие обстоятельства, когда страдания и боль приносят некое и немалое наслаждение.
+            </article>
+            <img src="cat.jpg" alt="content">
+        </div>
+    </section>
+    <section class="products">
+        <div class="products__container container">
+            <div class="products__form">
+                <div class="form">
+                    <p>ОБРАЗОВАНИЕ И РАБОТА</p>
+                    <hr>
+                    <label class="text_input" for="education"><em>*</em> Информация об образовании</label><br>
+                    <select class="sel" id="education">
+                        <option value="general">Учащийся общеобразовательного учреждения</option>
+                    </select>
+                    <label class="text_input" for="employment"><em>*</em> Информация о трудоустройстве</label><br>
+                    <select class="sel" id="employment">
+                        <option value="general">учащийся</option>
+                    </select>
+                    <p>МЕСТО УЧЕБЫ</p>
+                    <hr>
+                    <div style="background-color: #EFEFEF; color: #A9A9A9; height: 80%;"><br>
+                        <div style="background-color: #FFFFFF; height: 80%; width: 98%; margin-left: 1%; margin-right: 1%; border-style: dashed; border-color: #BBBBBB; padding: 0;">
+                            <label class="text_input" for="name"><em>*</em> Наименование учебного заведения</label><br>
+                            <input class="inpt" id="name"><br>
+                            <label class="text_input" for="Region"><em>*</em> Регион</label><br>
+                            <select style="width: 98.5%; height: 12%;" class="sel" id="Region">
+                                <option value="general">Укажите регион</option>
+                            </select>
+                            <label class="text_input" for="Locality"><em>*</em> Населенный пункт</label><br>
+                            <input class="inpt" id="Locality"><br>
+                            <label class="text_input" for="Region"><em>*</em> Дата поступления</label><br>
+                            <select id="month" class="sel" id="Region">
+                                <option value="general">Укажите месяц</option>
+                            </select>
+                            <select id="year" class="sel" id="Region">
+                                <option value="general">Укажите год</option>
+                            </select>
+                        </div>
+                        <div class="button__wrapper">
+                            <button id="button">Добавить ещё</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products__cart cart">
+                <div class="cart__images">
+                    <div class="cart__images-heart">
+                        <img src="https://www.nicepng.com/png/full/423-4232818_broken-heart-icon-.png" alt="heart">
+                    </div>
+                    <div class="cart__images-basket">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1413/1413925.png" alt="basket">
+                    </div>
+                </div>
+                <div class="cart__desc">
+                    <div class="cart__desc-credit cart__desc-item item-cart">
+                        <div>Кредит</div>
+                        до <span class="item-cart__count">36</span>
+                        <span class="item-cart__month-purple item-cart__month">мес</span>
+                    </div>
+                </div>
+                <div class="cart__desc">
+                    <div class="cart__desc-installment cart__desc-item item-cart">
+                        <div>Рассрочка</div>
+                        до <span class="item-cart__count">6</span>
+                        <span class="item-cart__month-red item-cart__month">мес</span>
+                    </div>
+                </div>
+                <div class="cart__img">
+                    <img src="led.jpg" alt="product">
+                </div>
+                <div class="cart__text">
+                    <span class="cart__text-desc">Потолочные светильники</span>
+                    <p class="cart__text-title">Светодиодная RGB лента Таро L920-5</p>
+                </div>
+                <div class="cart__cost">
+                    <p class="cart__cost-main">Суперь цена:</p>
+                    <p class="cart__cost-desc cart__cost-desc-red">199</p>
+                    <p class="cart__cost-desc cart__cost-desc-gray">248</p>
+                </div>
+                <div class="cart__card card">
+                    <div class="card__image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" alt="card">
+                    </div>
+                   <div class="card__desc">
+                       Вернём до
+                       <p class="card__desc-price">7</p>
+                       на
+                       <p class="card__desc-bonus">бонусную карту</p>
+                   </div>
+                </div>
+                <div class="cart__type">
+                    <span>тип рассрочки при которой скидка не действует</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__container container">
+        <p>©Copyright 2023</p>
+    </div>
+</footer>
 </body>
 </html>
