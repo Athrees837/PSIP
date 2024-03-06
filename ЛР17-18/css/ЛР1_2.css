@@ -1,0 +1,87 @@
+#Hobbys {
+	background-color: #2D2D2D;
+	width: 300px;
+	padding: 2px;
+	padding-left: 10px;
+	margin: 20px;
+	border: 0px;
+}
+#Hobbys li {
+	color: #2575CB;
+}
+#Hobbys p {
+	color: #2575CB;
+}
+#Hobbys span {
+	color: #605C5A;
+}
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+label {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+.lbl {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+  cursor: pointer;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+
+input:focus {
+  background: #eaeaea;
+}
+
+input, textarea {
+  width: 249px;
+}
+
+textarea {
+  height: 100px;
+}
+
+select {
+  width: 254px;
+}
+
+input[type=checkbox] {
+  width: 10px;
+  cursor: pointer;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 5px;
+  background: rgb(37,117,203);
+  box-shadow: 0 -3px rgb(26,85,184) inset;
+  transition: 0.2s;
+}
+input[type=submit]:hover {
+  background: rgb(26,85,184);
+}
+input[type=submit]:active {
+  background: rgb(6,65,164);
+  box-shadow: 0 3px rgb(6,65,164) inset
+}

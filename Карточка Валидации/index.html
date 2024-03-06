@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Экспресс заказ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <form onsubmit="return validateForm()">
+    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+    <input type="tel" id="phone" name="phone" placeholder="Ваш номер телефона" required pattern="\+\d{3}\(\d{2}\)\d{3}-\d{2}-\d{2}">
+
+    <label for="message">Адрес доставки и дополнительная информация</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Заказать</button>
+  </form>
+<script>
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      var phone = document.getElementById("phone").value;
+
+      if (name.trim() === '' || phone.trim() === '') {
+        alert("Пожалуйста, заполните все обязательные поля.");
+        return false;
+      }
+
+      var phoneRegex = /\+\d{3}\(\d{2}\)\d{3}-\d{2}-\d{2}/;
+      if (!phoneRegex.test(phone)) {
+        alert("Пожалуйста, введите корректный формат номера телефона (например, +375(29)979-63-02).");
+        return false;
+      }
+
+      saveToLocalStorage();
+
+      return true;
+    }
+
+    function saveToLocalStorage() {
+      var name = document.getElementById("name").value;
+      var phone = document.getElementById("phone").value;
+      var message = document.getElementById("message").value;
+
+      var data = {
+        name: name,
+        phone: phone,
+        message: message
+      };
+
+      var jsonData = JSON.stringify(data);
+
+      localStorage.setItem("formData", jsonData);
+
+      alert("Данные сохранены в Local Storage в формате JSON:\n\n" + jsonData);
+    }
+  </script>
+</body>
+</html>

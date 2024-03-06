@@ -113,43 +113,66 @@
 		</table>
 	</div>
 	<div>
-		<form action="#">
-  <p><i style="color: #2575CB;">Пожалуйста, заполните форму. Обязательные поля помечены </i><em>*</em></p>
-  <fieldset>
-    <legend style="color: #2575CB;">Контактная информация</legend>
-      <label class="text_input" for="name">Имя <em>*</em></label>
-      <input class="inpt" placeholder="Имя" id="name"><br>
-      <label for="telephone">Телефон</label>
-      <input class="inpt" placeholder="Телефон" id="telephone"><br>
-      <label for="email">Email <em>*</em></label>
-      <input class="inpt" placeholder="Email" id="email"><br>
-  </fieldset>
-  <fieldset>
-    <legend style="color: #2575CB;">Персональная информация</legend>
-      <label for="age">Возраст<em>*</em></label>
-      <input class="inpt" placeholder="Возраст" id="age"><br>
-      <label for="gender">Пол</label>
-      <select id="gender" style="background-color: #23241F; color: #757575; border: none;">
-        <option value="female">Женщина</option>
-        <option value="male">Мужчина</option>
-      </select><br>
-      <label for="comments">Перечислите личные качества</label>
-      <textarea id="comments" style="background-color: #23241F; border: none;"></textarea>
-  </fieldset>
-  <fieldset>
-    <legend style="color: #2575CB;">Выберите ваших любимых животных</legend>
-    <label class="lbl" for="zebra"><input id="zebra" type="checkbox"> Зебра</label>
-    <label class="lbl" for="cat"><input id="cat" type="checkbox"> Кошак</label>
-    <label class="lbl" for="anaconda"><input id="anaconda" type="checkbox"> Анаконда</label>
-    <label class="lbl" for="human"><input id="human" type="checkbox"> Человек</label>
-    <label class="lbl" for="elephant"><input id="elephant" type="checkbox"> Слон</label>
-    <label class="lbl" for="wildebeest"><input id="wildebeest" type="checkbox"> Антилопа</label>
-    <label class="lbl" for="pigeon"><input id="pigeon" type="checkbox"> Голубь</label>
-    <label class="lbl" for="crab"><input id="crab" type="checkbox"> Краб</label>
-  </fieldset>
-  <p><input type="submit" value="Отправить информацию"></p>
-	</form>
+    <form id="myForm" action="#">
+        <p><i style="color: #2575CB;">Пожалуйста, заполните форму. Обязательные поля помечены </i><em>*</em></p>
+        <fieldset>
+            <legend style="color: #2575CB;">Контактная информация</legend>
+            <label class="text_input" for="name">Имя <em>*</em></label>
+            <input class="inpt" placeholder="Имя" id="name" required><br>
+            <label for="telephone">Телефон</label>
+            <input class="inpt" placeholder="Телефон" id="telephone"><br>
+            <label for="email">Email <em>*</em></label>
+            <input class="inpt" required placeholder="Email" id="email"><br>
+        </fieldset>
+        <fieldset>
+            <legend style="color: #2575CB;">Персональная информация</legend>
+            <label for="age">Возраст<em>*</em></label>
+            <input class="inpt" placeholder="Возраст" id="age"><br>
+            <label for="gender">Пол</label>
+            <select id="gender" style="background-color: #23241F; color: #757575; border: none;">
+                <option value="Женщина">Женщина</option>
+                <option value="Мужчина">Мужчина</option>
+            </select><br>
+            <label for="comments">Перечислите личные качества</label>
+            <textarea id="comments" style="background-color: #23241F; border: none;"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend style="color: #2575CB;">Выберите ваших любимых животных</legend>
+            <label class="lbl" for="zebra"><input id="zebra" type="checkbox"> Зебра</label>
+            <label class="lbl" for="cat"><input id="cat" type="checkbox"> Кошак</label>
+            <label class="lbl" for="anaconda"><input id="anaconda" type="checkbox"> Анаконда</label>
+            <label class="lbl" for="human"><input id="human" type="checkbox"> Человек</label>
+            <label class="lbl" for="elephant"><input id="elephant" type="checkbox"> Слон</label>
+            <label class="lbl" for="wildebeest"><input id="wildebeest" type="checkbox"> Антилопа</label>
+            <label class="lbl" for="pigeon"><input id="pigeon" type="checkbox"> Голубь</label>
+            <label class="lbl" for="crab"><input id="crab" type="checkbox"> Краб</label>
+        </fieldset>
+        <p><input type="button" value="Отправить информацию" onclick="getFormData()"></p>
+    </form>
 	</div>
+	<script>
+    function getFormData() {
+        var name = document.getElementById("name").value;
+        var telephone = document.getElementById("telephone").value;
+        var email = document.getElementById("email").value;
+        var age = document.getElementById("age").value;
+        var gender = document.getElementById("gender").value;
+        var comments = document.getElementById("comments").value;
+
+        var favoriteAnimals = [];
+        var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+        for (var i = 0; i < checkboxes.length; i++) {
+            favoriteAnimals.push(checkboxes[i].nextSibling.nodeValue.trim());
+        }
+
+        var result = "Имя: " + name + "\nТелефон: " + telephone + "\nEmail: " + email + "\nВозраст: " + age +
+            "\nПол: " + gender + "\nЛичные качества: " + comments + "\nЛюбимые животные: " +
+            (favoriteAnimals.length > 0 ? favoriteAnimals.join(', ') : 'Нет выбранных животных');
+
+        alert(result);
+    }
+</script>
+
 	<p><a href="Сайт.html#top">В начало</a></p>	
 	</div>
 </body>
